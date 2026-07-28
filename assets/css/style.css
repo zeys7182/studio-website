@@ -27,7 +27,7 @@ body {
 ========================= */
 
 .container {
-    width: min(1400px, 90%);
+    width: min(1400px, calc(100% - 40px));
     margin: 0 auto;
 }
 
@@ -89,6 +89,7 @@ body {
 }
 
 .hero-content {
+    width: 100%;
     max-width: 900px;
     display: flex;
     flex-direction: column;
@@ -110,6 +111,7 @@ body {
     line-height: 1;
     letter-spacing: -2px;
     max-width: 1200px;
+    overflow-wrap: break-word;
 }
 
     .hero h1 span {
@@ -369,4 +371,33 @@ body {
     color: #8a8a8a;
     font-size: 18px;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .project-card,
+    .project-card.vertical {
+        flex: 0 0 85%;
+    }
+
+        .project-card video {
+            height: 220px;
+        }
+
+    .category-header h3 {
+        font-size: 26px;
+    }
+
+    .projects-slider {
+        gap: 20px;
+    }
 }
