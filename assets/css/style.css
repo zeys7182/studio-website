@@ -302,6 +302,26 @@ body {
             object-fit: cover;
         }
 
+
+@media (max-width: 768px) {
+
+    .project-card {
+        flex: 0 0 85%;
+    }
+
+        .project-card video {
+            height: 220px;
+        }
+
+    .category-header h3 {
+        font-size: 26px;
+    }
+
+    .projects-slider {
+        gap: 20px;
+    }
+}
+
 /* ==========================
    ABOUT
 ========================== */
