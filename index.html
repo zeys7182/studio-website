@@ -14,14 +14,29 @@
 </head>
 
 <body>
+    <div class="background-slider">
+
+        <div class="bg-slide active"></div>
+        <div class="bg-slide"></div>
+
+    </div>
+
     <header class="header">
         <div class="container">
             <a href="#" class="logo">STUDIO</a>
 
             <nav class="nav">
-                <a href="#What we do">What we do</a>
-                <a href="#portfolio">Work</a>
-                <a href="#contact">Contact</a>
+                <a href="#What we do" data-lang="nav_services">What we do</a>
+                <a href="#portfolio" data-lang="nav_work">Work</a>
+                <a href="#contact" data-lang="nav_contact">Contact</a>
+
+                <div class="language-switcher">
+
+                    <button class="lang-btn active" data-language="en">EN</button>
+
+                    <button class="lang-btn" data-language="ru">RU</button>
+
+                </div>
             </nav>
         </div>
     </header>
@@ -33,21 +48,30 @@
 
                 <div class="hero-content">
 
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle" data-lang="hero_subtitle">
                         Content/Graphics Creation
                     </p>
 
                     <h1>
-                        High-end 3D & AI Motion Graphics
-                        <span>for Games, Shows<br>and Digital Media</span>
+
+                        <span data-lang="hero_title">
+                            High-end 3D & AI Motion Graphics
+                        </span>
+
+                        <span data-lang="hero_title2">
+                            for Games, Shows<br>and Digital Media
+                        </span>
+
                     </h1>
 
-                    <p class="hero-description">
+                    <p class="hero-description" data-lang="hero_desc">
                         We create real-time experiences, cinematics,
                         VFX and interactive content for museums, exhibitions, LED installations and immersive media.
                     </p>
 
-                    <a href="#portfolio" class="hero-button">
+                    <a href="#portfolio"
+                       class="hero-button"
+                       data-lang="hero_button">
                         View Work
                     </a>
 
@@ -127,6 +151,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/cinematics/cinematic-trailer.mp4" type="video/mp4">
@@ -144,6 +169,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/cinematics/web/overtrip-main.mp4" type="video/mp4">
@@ -161,6 +187,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/cinematics/overtrip-monkey.mp4" type="video/mp4">
@@ -178,6 +205,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/cinematics/samla-teaser.mp4" type="video/mp4">
@@ -195,6 +223,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/cinematics/web/untitled2.mp4" type="video/mp4">
@@ -227,6 +256,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/leds/7dcinema-vfx.mp4" type="video/mp4">
@@ -244,6 +274,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/leds/web/Sequence01.mp4" type="video/mp4">
@@ -261,6 +292,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/leds/road-vicrory.mp4" type="video/mp4">
@@ -289,6 +321,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/artists/web/artist1.mp4" type="video/mp4">
@@ -306,6 +339,7 @@
                             <video muted
                                    loop
                                    playsinline
+                                   controls
                                    preload="metadata">
 
                                 <source src="assets/videos/artists/web/artist2.mp4" type="video/mp4">
@@ -386,6 +420,14 @@
         </section>
 
     </main>
+
+    <div class="video-modal">
+
+        <span class="close-video">&times;</span>
+
+        <video controls></video>
+
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
