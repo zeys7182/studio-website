@@ -396,87 +396,6 @@ body {
     line-height: 1.5;
 }
 
-/* ==========================
-   MOBILE
-========================== */
-
-@media (max-width: 768px) {
-
-    .header {
-        padding: 15px 0;
-    }
-
-        .header .container {
-            flex-direction: column;
-            gap: 15px;
-        }
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .nav {
-        gap: 18px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-        .nav a {
-            font-size: 13px;
-        }
-
-    .hero {
-        min-height: auto;
-        padding: 160px 0 80px;
-    }
-
-        .hero h1 {
-            font-size: 42px;
-            line-height: 1.05;
-        }
-
-    .hero-description {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-
-    .section-title {
-        font-size: 42px;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-right {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .project-card,
-    .project-card.vertical {
-        flex: 0 0 85%;
-    }
-
-        .project-card video {
-            height: 220px;
-        }
-
-    .category-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-        .category-header h3 {
-            font-size: 28px;
-        }
-}
 
 /* ==========================
    VIDEO MODAL
@@ -550,18 +469,119 @@ body {
         color: #fff;
     }
 
-/* ==========================
+/* ==========================================
    MOBILE
-========================== */
+========================================== */
 
-html,
-body {
-    overflow-x: hidden;
+@media (max-width:768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    /* HEADER */
+
+    .header {
+        padding: 20px 0;
+    }
+
+        .header .container {
+            flex-direction: column;
+            gap: 18px;
+        }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .language-switcher {
+        margin-left: 0;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 140px 0 80px;
+    }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.05;
+        }
+
+    .hero-description {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+
+    /* ABOUT */
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-right {
+        grid-template-columns: repeat(2,1fr);
+        gap: 24px;
+    }
+
+    .about-stat h4 {
+        font-size: 34px;
+    }
+
+    .about-stat p {
+        font-size: 16px;
+    }
+
+    /* PROJECTS */
+
+    .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .slider-buttons {
+        display: none;
+    }
+
+    .projects-slider {
+        gap: 16px;
+    }
+
+    .project-card {
+        flex: 0 0 90%;
+    }
+
+        .project-card video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+
+        .project-card.vertical {
+            flex: 0 0 70%;
+        }
+
+            .project-card.vertical video {
+                aspect-ratio: 9/16;
+                height: auto;
+            }
+
+    .video-modal video {
+        width: 95vw;
+    }
 }
-
-img,
-video {
-    max-width: 100%;
-    height: auto;
-}
-
