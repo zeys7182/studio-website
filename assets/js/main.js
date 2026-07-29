@@ -45,7 +45,12 @@
         about_projects: "Projects",
         about_experience: "Years Experience",
         about_production: "Real-time Production",
-        about_remote: "Worldwide Collaboration"
+        about_remote: "Worldwide Collaboration",
+        contact_title: "Contact",
+
+        contact_desc: "Interested in working together? Let's talk.",
+
+        contact_email: "Email",
 
     },
 
@@ -94,8 +99,12 @@
         about_projects: "Проектов",
         about_experience: "Лет опыта",
         about_production: "Производство в реальном времени",
-        about_remote: "Международное сотрудничество"
+        about_remote: "Международное сотрудничество",
+        contact_title: "Контакты",
 
+        contact_desc: "Есть идея или проект? Давайте обсудим.",
+
+        contact_email: "Почта",
     }
 
 };

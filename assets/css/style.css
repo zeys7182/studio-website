@@ -51,7 +51,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient( rgba(0,0,0,.82), rgba(0,0,0,.86) );
+    background: linear-gradient( rgba(0,0,0,.74), rgba(0,0,0,.78) );
     z-index: 2;
 }
 
@@ -583,5 +583,53 @@ body {
 
     .video-modal video {
         width: 95vw;
+    }
+}
+
+/* ==========================
+CONTACT
+========================== */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.contact-item {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 24px;
+}
+
+    .contact-item span {
+        display: block;
+        margin-bottom: 16px;
+        color: #777;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .contact-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        transition: .3s;
+    }
+
+        .contact-item a:hover {
+            opacity: .65;
+        }
+
+@media(max-width:900px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-item a {
+        font-size: 20px;
     }
 }
