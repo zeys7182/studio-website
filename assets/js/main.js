@@ -6,39 +6,46 @@
         nav_work: "Work",
         nav_contact: "Contact",
 
-        hero_subtitle: "Content / Graphics Creation",
+        hero_subtitle: "Creative Studio",
         hero_title: "High-end 3D & AI Motion Graphics",
         hero_title2: "for Games, Shows<br>and Digital Media",
-        hero_desc: "We create real-time experiences, cinematics, VFX and interactive content for museums, exhibitions, LED installations and immersive media.",
+        hero_desc: "We create cinematics, real-time experiences, VFX and interactive content for games, museums, exhibitions, LED installations and digital media.",
         hero_button: "View Work",
 
         services_title: "What We Do",
-        services_desc: "We create high-end visual content for brands, museums, exhibitions, games and digital media.",
+        services_desc: "From concept to final delivery, we produce cinematic-quality visuals, interactive experiences and real-time content for entertainment, culture and technology.",
 
-        card1_title: "3D Cinematics & Trailers",
-        card1_desc: "Story-driven cinematics, trailers and promotional films.",
+        card1_title: "Cinematics & Trailers",
+        card1_desc: "High-end cinematics, trailers and storytelling powered by Unreal Engine.",
 
         card2_title: "Motion Design",
-        card2_desc: "Motion design for advertising, presentations and digital media.",
+        card2_desc: "Motion graphics for advertising, presentations, events and digital campaigns.",
 
-        card3_title: "Museums & Exhibitions",
-        card3_desc: "Digital exhibits and immersive storytelling for public spaces.",
+        card3_title: "Museums & Interactive Experiences",
+        card3_desc: "Immersive installations, museums and exhibition experiences with real-time technologies.",
 
-        card4_title: "LED Content",
-        card4_desc: "Large-scale visuals for LED walls, concerts and events.",
+        card4_title: "LED & Event Visuals",
+        card4_desc: "Visual content for LED screens, concerts, shows and large-scale digital events.",
 
         card5_title: "Game Art Production",
-        card5_desc: "Complete game art pipeline: characters, environments and props optimized for Unreal Engine and real-time rendering.",
+        card5_desc: "Environment art, props, optimization and complete real-time production pipelines for Unreal Engine.",
 
         portfolio_title: "Selected Work",
-        portfolio_desc: "A selection of our latest projects across cinematics, interactive experiences and digital installations.",
+        portfolio_desc: "A selection of our latest projects across cinematics, interactive experiences and digital productions.",
 
         cat_cinematics: "Cinematics",
-        cat_led: "LED / Event / Cinema Visuals",
+        cat_led: "LED / Events / Cinema",
         cat_artists: "Music Artists",
 
         about_title: "About",
-        about_desc: "We are a creative studio focused on real-time graphics, cinematics, VFX, interactive experiences and high-end visual production. Our team combines game development expertise with modern AI tools to deliver content for brands, museums, exhibitions, entertainment and digital media."
+        about_desc: "We are a creative studio specializing in real-time graphics, cinematics, VFX and interactive experiences. Combining Unreal Engine expertise with modern AI tools, we create premium visual content for games, museums, exhibitions, brands and digital media.",
+
+        about_heading: "We build cinematic-quality visuals that transform ideas into immersive digital experiences.",
+
+        about_projects: "Projects",
+        about_experience: "Years Experience",
+        about_production: "Real-time Production",
+        about_remote: "Worldwide Collaboration"
 
     },
 
@@ -48,39 +55,46 @@
         nav_work: "Работы",
         nav_contact: "Контакты",
 
-        hero_subtitle: "Создание графики и контента",
+        hero_subtitle: "Креативная студия",
         hero_title: "Премиальная 3D и AI-графика",
         hero_title2: "для игр, шоу<br>и цифровых проектов",
-        hero_desc: "Мы создаем синематики, VFX, интерактивный контент, музейные инсталляции, LED-графику и визуальные решения в реальном времени.",
+        hero_desc: "Мы создаем синематики, VFX, интерактивные проекты и визуальный контент для игр, музеев, выставок, LED-экранов и цифровых медиа.",
         hero_button: "Наши работы",
 
         services_title: "Что мы создаем",
-        services_desc: "Мы создаем визуальный контент высокого уровня для брендов, музеев, выставок, игровой индустрии и цифровых проектов.",
+        services_desc: "От идеи до финального результата мы создаем кинематографичный визуальный контент, интерактивные проекты и решения в реальном времени для индустрии развлечений, культуры и технологий.",
 
-        card1_title: "3D-синематики и трейлеры",
-        card1_desc: "Постановочные синематики, трейлеры и проморолики.",
+        card1_title: "Синематики и трейлеры",
+        card1_desc: "Кинематографичные ролики, игровые трейлеры и постановочные сцены на Unreal Engine.",
 
         card2_title: "Моушн-дизайн",
-        card2_desc: "Анимационная графика для рекламы, презентаций и цифровых медиа.",
+        card2_desc: "Анимационная графика для рекламы, презентаций, мероприятий и цифровых кампаний.",
 
-        card3_title: "Музеи и выставки",
-        card3_desc: "Интерактивные экспозиции и цифровые выставочные решения.",
+        card3_title: "Музеи и интерактивные проекты",
+        card3_desc: "Иммерсивные инсталляции, музейные экспозиции и выставочные пространства с использованием технологий реального времени.",
 
-        card4_title: "LED-контент",
-        card4_desc: "Контент для LED-экранов, концертов, шоу и мероприятий.",
+        card4_title: "LED и шоу-контент",
+        card4_desc: "Визуальный контент для LED-экранов, концертов, шоу и масштабных мероприятий.",
 
-        card5_title: "Разработка игрового арта",
-        card5_desc: "Полный цикл создания игрового арта: окружение, персонажи и пропсы, оптимизированные для Unreal Engine и других игровых движков.",
+        card5_title: "Game Art Production",
+        card5_desc: "Создание окружения, пропсов, оптимизация и полный цикл производства контента для Unreal Engine.",
 
         portfolio_title: "Избранные проекты",
-        portfolio_desc: "Подборка наших работ в области синематиков, интерактивных проектов и визуальных инсталляций.",
+        portfolio_desc: "Подборка наших работ в области синематиков, интерактивных проектов и цифрового визуального производства.",
 
         cat_cinematics: "Синематики",
         cat_led: "LED / Шоу / Кино",
-        cat_artists: "Музыкальные артисты",
+        cat_artists: "Музыкальные проекты",
 
         about_title: "О студии",
-        about_desc: "Мы — студия, специализирующаяся на графике реального времени, синематиках, VFX, интерактивных проектах и визуальном производстве. Объединяем опыт разработки игр и современные AI-инструменты для создания контента для брендов, музеев, выставок, шоу и цифровых медиа."
+        about_desc: "Мы — креативная студия, специализирующаяся на графике реального времени, синематиках, VFX и интерактивных проектах. Объединяя экспертизу Unreal Engine и современные AI-инструменты, мы создаем визуальный контент премиального уровня для игр, музеев, выставок, брендов и цифровых медиа.",
+
+        about_heading: "Мы превращаем идеи в кинематографичный визуальный опыт, объединяя технологии, искусство и интерактивность.",
+
+        about_projects: "Проектов",
+        about_experience: "Лет опыта",
+        about_production: "Производство в реальном времени",
+        about_remote: "Международное сотрудничество"
 
     }
 
