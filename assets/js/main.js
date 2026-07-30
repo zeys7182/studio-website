@@ -105,6 +105,60 @@
         contact_desc: "Есть идея или проект? Давайте обсудим.",
 
         contact_email: "Почта",
+    },
+
+    kz: {
+
+        nav_services: "Қызметтер",
+        nav_work: "Жобалар",
+        nav_contact: "Байланыс",
+
+        hero_subtitle: "Креативті студия",
+        hero_title: "Премиум 3D және AI графика",
+        hero_title2: "ойындар, шоу<br>және цифрлық жобалар үшін",
+        hero_desc: "Біз ойындар, мұражайлар, көрмелер, LED экрандар және цифрлық медиа үшін синематикалар, VFX және интерактивті визуалды контент жасаймыз.",
+        hero_button: "Жұмыстарды көру",
+
+        services_title: "Біз не жасаймыз",
+        services_desc: "Идеядан бастап дайын нәтижеге дейін ойын индустриясы, мәдениет және технологиялар үшін жоғары деңгейдегі визуалды контент жасаймыз.",
+
+        card1_title: "Синематикалар мен трейлерлер",
+        card1_desc: "Unreal Engine негізіндегі кинематографиялық роликтер мен трейлерлер.",
+
+        card2_title: "Моушн-дизайн",
+        card2_desc: "Жарнама, презентациялар және цифрлық медиаға арналған анимациялық графика.",
+
+        card3_title: "Мұражайлар мен көрмелер",
+        card3_desc: "Интерактивті экспозициялар мен иммерсивті цифрлық шешімдер.",
+
+        card4_title: "LED контент",
+        card4_desc: "LED экрандар, концерттер және шоу бағдарламаларына арналған визуалды контент.",
+
+        card5_title: "Game Art Production",
+        card5_desc: "Unreal Engine үшін орта, проптар және толық өндірістік цикл.",
+
+        portfolio_title: "Таңдалған жобалар",
+        portfolio_desc: "Синематикалар, интерактивті жобалар және цифрлық өндіріс бойынша жұмыстарымыз.",
+
+        cat_cinematics: "Синематикалар",
+        cat_led: "LED / Шоу / Кино",
+        cat_artists: "Музыкалық жобалар",
+
+        about_title: "Студия туралы",
+        about_desc: "Біз нақты уақыттағы графика, синематикалар, VFX және интерактивті жобаларға маманданған креативті студиямыз. Unreal Engine тәжірибесі мен заманауи AI құралдарын біріктіріп, ойындар, мұражайлар, көрмелер және брендтер үшін премиум визуалды контент жасаймыз.",
+
+        about_heading: "Біз идеяларды кинематографиялық цифрлық тәжірибеге айналдырамыз.",
+
+        about_projects: "Жоба",
+        about_experience: "Жыл тәжірибе",
+        about_production: "Real-time өндірісі",
+        about_remote: "Халықаралық серіктестік",
+
+        contact_title: "Байланыс",
+        contact_desc: "Жобаңыз бар ма? Бізбен байланысыңыз.",
+        contact_email: "Электрондық пошта",
+        contact_location: "Орналасқан жер"
+
     }
 
 };
@@ -237,7 +291,15 @@ setInterval(() => {
 
     const nextSlide = (currentSlide + 1) % 2;
 
-    currentImage = (currentImage + 1) % backgrounds.length;
+    let randomImage;
+
+    do {
+
+        randomImage = Math.floor(Math.random() * backgrounds.length);
+
+    } while (randomImage === currentImage);
+
+    currentImage = randomImage;
 
     slides[nextSlide].style.backgroundImage =
         `url(${backgrounds[currentImage]})`;
@@ -247,7 +309,7 @@ setInterval(() => {
 
     currentSlide = nextSlide;
 
-}, 5000);
+}, 3650);
 
 
 const langButtons = document.querySelectorAll(".lang-btn");
