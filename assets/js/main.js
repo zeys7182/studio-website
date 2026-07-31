@@ -228,9 +228,23 @@ document.querySelectorAll(".project-card video").forEach(video => {
 
     video.addEventListener("click", () => {
 
-        modal.classList.add("active");
+        // остановить все видео карточек
+        document.querySelectorAll(".project-card video").forEach(v => {
 
+            v.pause();
+            v.currentTime = 0;
+
+        });
+
+        // остановить модальное видео
+        modalVideo.pause();
+        modalVideo.removeAttribute("src");
+        modalVideo.load();
+
+        // загрузить новое
         modalVideo.src = video.querySelector("source").src;
+
+        modal.classList.add("active");
 
         modalVideo.play();
 
@@ -252,7 +266,8 @@ modal.addEventListener("click", (e) => {
     if (e.target === modal) {
 
         modalVideo.pause();
-        modalVideo.currentTime = 0;
+        modalVideo.removeAttribute("src");
+        modalVideo.load();
 
         modal.classList.remove("active");
 

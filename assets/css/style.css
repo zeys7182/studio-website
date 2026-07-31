@@ -443,6 +443,8 @@ body {
 ========================== */
 
 .language-switcher {
+    position: relative;
+    z-index: 9999;
     display: flex;
     gap: 8px;
     margin-left: 40px;
