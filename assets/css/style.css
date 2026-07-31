@@ -635,3 +635,24 @@ CONTACT
         font-size: 20px;
     }
 }
+
+.youtube-card iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 10px;
+    display: block;
+}
+
+.youtube-frame {
+    display: none;
+    width: min(1200px,90vw);
+    height: min(70vh,675px);
+    border: none;
+    border-radius: 12px;
+    background: #000;
+}
+
+.local-video {
+    display: block;
+}

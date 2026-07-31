@@ -242,6 +242,16 @@ document.querySelectorAll(".project-card video").forEach(video => {
         modalVideo.load();
 
         // загрузить новое
+        const youtube = video.dataset.youtube;
+
+        if (youtube) {
+
+            window.open(youtube, "_blank");
+
+            return;
+
+        }
+
         modalVideo.src = video.querySelector("source").src;
 
         modal.classList.add("active");

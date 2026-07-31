@@ -270,17 +270,14 @@
 
                     <div class="projects-slider">
 
-                        <div class="project-card">
+                        <div class="project-card youtube-card">
 
-                            <video muted
-                                   loop
-                                   playsinline
-                                   controls
-                                   preload="metadata">
-
-                                <source src="assets/videos/leds/7dcinema-vfx.mp4" type="video/mp4">
-
-                            </video>
+                            <iframe src="https://www.youtube.com/embed/TMona0i40sI?mute=1&controls=1&rel=0"
+                                    title="YouTube video"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                                    allowfullscreen>
+                            </iframe>
 
                             <h4>7D Cinema VFX</h4>
 
@@ -288,17 +285,14 @@
 
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card youtube-card">
 
-                            <video muted
-                                   loop
-                                   playsinline
-                                   controls
-                                   preload="metadata">
-
-                                <source src="assets/videos/leds/web/Sequence01.mp4" type="video/mp4">
-
-                            </video>
+                            <iframe src="https://www.youtube.com/embed/Glq4MTjCTFI?rel=0"
+                                    title="Lumara"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                                    allowfullscreen>
+                            </iframe>
 
                             <h4>Lumara</h4>
 
@@ -306,17 +300,14 @@
 
                         </div>
 
-                        <div class="project-card">
+                        <div class="project-card youtube-card">
 
-                            <video muted
-                                   loop
-                                   playsinline
-                                   controls
-                                   preload="metadata">
-
-                                <source src="assets/videos/leds/road-vicrory.mp4" type="video/mp4">
-
-                            </video>
+                            <iframe src="https://www.youtube.com/embed/DZEG6mKmb0g?rel=0"
+                                    title="YouTube video player"
+                                    loading="lazy"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                                    allowfullscreen>
+                            </iframe>
 
                             <h4>Дорога к победе!</h4>
 
@@ -477,7 +468,13 @@
 
         <span class="close-video">&times;</span>
 
-        <video controls></video>
+        <video class="local-video" controls></video>
+
+        <iframe class="youtube-frame"
+                src=""
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen>
+        </iframe>
 
     </div>
 
